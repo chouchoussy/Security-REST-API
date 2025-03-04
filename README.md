@@ -30,6 +30,38 @@
 ###### Tạo sản phẩm thành công, status 200 
 ![image](https://github.com/user-attachments/assets/ef6099bb-2679-4c49-8392-69134dbf2589)
 
+## Xem sản phẩm (GET)
+- Cả user và admin đều có quyền xem sản phẩm
+#### User 
+![image](https://github.com/user-attachments/assets/1045dda6-cc8a-4d47-9997-0859d387b4df)
+
+#### Admin 
+![image](https://github.com/user-attachments/assets/94d0645a-a37e-49d8-8d18-3c820b4c6fc3)
+
+## Cập nhật sản phẩm (PUT)
+#### User 
+###### Nhập với token của user đã lấy ở bước trước, không thành công (status 403) do user không có quyền. 
+![image](https://github.com/user-attachments/assets/d3ff596f-f42d-40b6-b6b0-075ae5b9fe28)
+
+#### Admin 
+###### Nhập với token của admin đã lấy ở bước trước
+![image](https://github.com/user-attachments/assets/14b7f956-03f6-4ae7-b692-34d2ede9d321)
+
+###### Cập nhật sản phẩm thành công, Body trả về thông tin sản phẩm đó sau khi cập nhật, Status 200 ok. 
+![image](https://github.com/user-attachments/assets/210a1b85-6da3-4e99-a933-9a8a8389b86c)
+
+## Xóa sản phẩm (DELETE)
+#### User 
+###### Nhập với token đã lấy ở trước, xóa sản phẩm không thành công do user không có quyền, status trả về 403. 
+![image](https://github.com/user-attachments/assets/c7cb2688-a96f-42d3-a1c3-7bcc002b71fe)
+
+#### Admin
+###### Nhập với token admin đã lấy ở trước, xóa sản phẩm thành công, status trả về 204 No Content. 
+![image](https://github.com/user-attachments/assets/8f51c4c1-9124-4a11-a4a0-e3a9fada22fa)
+
+
+
+
 
 
 
