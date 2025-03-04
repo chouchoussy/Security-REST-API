@@ -1,3 +1,31 @@
+# GIỚI THIỆU
+## Giới thiệu chung
+Dự án **Security REST API** là một ứng dụng Spring Boot cung cấp các REST API cơ bản (GET, POST, PUT, DELETE) để quản lý sản phẩm (`Product`). Ứng dụng sử dụng **JWT (JSON Web Token)** để quản lý phân quyền người dùng với hai vai trò: `USER` (chỉ có quyền GET) và `ADMIN` (quyền truy cập đầy đủ).
+
+## Công nghệ sử dụng
+- **Spring Boot**: 3.2.3
+- **Spring Security**: Bảo mật và xác thực JWT
+- **Spring Data JPA**: Quản lý cơ sở dữ liệu
+- **H2 Database**: Cơ sở dữ liệu in-memory
+- **JWT**: io.jsonwebtoken (jjwt-api 0.11.5)
+- **Java**: 17
+- **Maven**: Quản lý dependency
+- **Phần mềm POSTMAN**: Có thể sử dụng extension tại VSCODE
+
+## Chạy ứng dụng 
+1. Cách 1: Sử dụng Maven:
+   ```
+   ./mvnw spring-boot:run
+   ```
+2. Cách 2: Sử dụng file jar
+  ```
+    java -jar target/securing-web-initial-0.0.1-SNAPSHOT.jar
+  ```
+- Ứng dụng sẽ khởi động tại ``` http://localhost:8080 ```
+- Sau đó, sử dụng ``` POSTMAN ``` để chạy demo các API như demo bên dưới. 
+
+
+# DEMO 
 ## Các API cần kiểm tra
 - ``` /api/auth/register ``` (POST): Đăng ký người dùng.
 - ``` /api/auth/login``` (POST): Đăng nhập để lấy token JWT.
